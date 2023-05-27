@@ -1,0 +1,250 @@
+.responsive{
+    width:100%;
+    height:auto;
+  }
+  
+  /* Mobile and Desktop Styles */
+ .header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+body {
+  font-family: 'Times New Roman', Times, sans-serif;
+  background-color:   #f1f6fe;
+ 
+
+}
+
+.logo {
+  width: 90px; 
+  height: auto;
+  margin-right: 10px;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+.header-text {
+  font-size: 35px; 
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: darkcyan;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+  
+
+.navbar {
+  overflow: hidden;
+  background-color:  #2b6777;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #25778d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.container img {
+  position: relative;
+  top: 30px;
+  
+  
+}
+.text h3 {
+    padding: 10px;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    color: darkcyan;
+    position: relative;
+   top: 25px;
+  }
+  .text p {
+    position: relative;
+    top: 25px;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .rectangle {
+    border: 5px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .rectangle img {
+    width: 250px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  .rectangle .rapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .rectangle h2 {
+    color: darkcyan;
+  }
+  
+  .rectangle p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+  }
+  
+  /* responsiveness */
+  
+  @media (max-width: 768px) {
+    .rectangle {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .rectangle img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50px;
+   
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+ 
+
+
+  footer {
+    background-color: rgba(255, 255, 255, 0.826);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .subscribe-form {
+    flex: 1 0 40%;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .subscribe-form input[type="email"] {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #090909;
+    border-radius: 25px;
+  }
+
+  .subscribe-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fffcf7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .copyrigh {
+    flex: 1 0 60%;
+    text-align: right;
+    color: #666;
+  }
+  
+  .copyrigh p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
